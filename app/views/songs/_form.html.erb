@@ -1,0 +1,9 @@
+<%= form_for @song do |f| %>
+    <% booleans = [true, false]%>
+    Title: <%= f.text_field :title %>
+    Artist Name:<%= f.text_field :artist_name %>
+    Released <%= f.check_box :released, {}, true  %>
+    <%= f.text_field :release_year %>
+    <%= f.text_field :genre %>
+    <%= f.submit %>
+<% end %>
